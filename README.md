@@ -19,7 +19,7 @@ Adding a new entry to fstab:
     # :backup => true will create a timestamped fstab backup before saving
     # the changes
     fstab = Fstab.new '/etc/fstab', :safe_mode => true, 
-                                    :backup => true, :backup_dir = '/etc/'
+                                    :backup => true, :backup_dir => '/etc/'
     
     # Asuming /dev/sda1 has a valid FS
     # The library will use the FS UUID automatically by default even if the block device path
